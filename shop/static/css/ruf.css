@@ -1,0 +1,56 @@
+/* ==============================
+   Categories Section Styling
+   ============================== */
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image size (same height for all cards) */
+.card-img-top {
+    width: 100%;
+    height: 200px;       /* adjust height */
+    object-fit: cover;   /* keeps aspect ratio, crops if needed */
+}
+
+/* Card body text */
+.card-body {
+    text-align: center;  /* center align */
+    padding: 15px;
+}
+
+/* Card title (override Bootstrap text-primary color) */
+.card-title.text-primary {
+    color: #ff6600 !important;   /* custom orange shade, change as you like */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Card description text */
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 50px;   /* ensures equal height even if text is short */
+}
+
+/* Custom button styling */
+.btn-primary {
+    background-color: #008CBA !important;  /* custom blue */
+    border: none !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #005f73 !important;  /* darker shade on hover */
+}

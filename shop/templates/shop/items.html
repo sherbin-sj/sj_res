@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href='{% static 'css/style.css' %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="{% static 'image/logo.png' %}" alt="Logo">
+            </div>
+
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i> <a href="{% url 'cart' %}" class="fa-solid fa-cart-shopping"></a></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+        </nav>
+
+    <!-- Menu -->
+
+    
+
+        <div class="menu" id="Menu">
+            <h1><span>{{cateory}}</span> Menu</h1>
+        
+            <div class="menu_box">
+                {%for item in products%}
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                    <img src="{{item.Product_image.url}}">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="menu_info">
+                        <h2>{{ item.name }}</h2>
+                        <div class="price">
+                        <h3><s>Rs &#8377; {{ item.orginal_price }}</s></h3>
+                        <h3>Rs &#8377; {{ item.selling_price }}</h3>
+                        </div>
+                        <div class="menu_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        {% if item.quantity > 0 %}
+                        <a href="{% url 'cart' %}" class="menu_btn">Add to Cart</a>
+                        {% else %}
+                        <a class="menu_btn_2"> Out of Stock</a>
+                        {% endif %}
+                    </div>
+    
+                </div> 
+                {%endfor%}
+            </div>
+        
+        </div>
+    </div>
+    </section>
+</div>
+    
+      <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Sri Lanka</p>
+                <p>USA</p>
+                <p>India</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+94 12 3456 789</p>
+                <p>+94 25 5568456</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Sherbin</span></p>
+
+    </footer>
+
+        
+</body> 
+</html>

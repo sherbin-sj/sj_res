@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href='{% static 'css/style.css' %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src={% static 'image/logo.png' %}>
+            </div>
+
+            <ul>
+                <li><a href={% url 'home' %}>Home</a></li>
+                <li><a href={% url 'menu' %}>Menu</a></li>
+                <li><a href={% url 'about' %}>About</a></li>
+                <li><a href={% url 'review' %} class="active">Review</a></li>
+                
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+        </nav>
+    </section>
+    
+    </div>
+        <div class="review" id="Review">
+        <h1>Customer<span>Review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src={% static 'image/review_1.png' %}>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src={% static 'image/review_2.png' %}>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src={% static 'image/review_3.png' %}>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src={% static 'image/review_4.png' %}>
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+      <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Sri Lanka</p>
+                <p>USA</p>
+                <p>India</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+94 12 3456 789</p>
+                <p>+94 25 5568456</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Sherbin</span></p>
+
+    </footer>
+
+</body> 
+</html>
